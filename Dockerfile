@@ -19,6 +19,7 @@ RUN chmod o-r /etc/sudoers.d/$sudoers_file
 RUN apt-get $apt_opts install build-essential
 # RUN apt-get $apt_opts install libc6-dev
 RUN apt-get $apt_opts install vim
+RUN apt-get $apt_opts install git
 
 COPY startup.sh /startup.sh
 RUN chmod 755 /startup.sh
